@@ -30,7 +30,7 @@ with st.sidebar:
 results=calculate(inputs, month)
 
 # header part styling
-st.markdown("""
+st.markdown(f"""
 <h2 style="font-family:Georgia; font-weight:900;">
 Water<span style="color:#4db8ff;">Pulse</span>
 <span style="color:rgba(180,210,255,0.3); font-size:16px;"> Nilgiris</span>
@@ -47,7 +47,7 @@ render_days_card(results, month)
 render_cost_card(results, month)
 
 # bottom styling
-st.markdown("""
+st.markdown(f"""
 <div style="text-align:center; font-size:11px; color:rgba(120,150,200,0.3);">
 WaterPulse Nilgiris · IMD Verified Rainfall Data · Python + Streamlit
 </div>
